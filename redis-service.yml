@@ -1,0 +1,18 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis-service
+  labels:
+    author: rufus
+    name: redis-service
+spec:
+  type: ClusterIP
+  ports:
+    - port: 6379
+      targetPort: 6379
+  selector:
+    author: rufus
+    name: redis-pod
+
+...
