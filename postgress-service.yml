@@ -13,5 +13,5 @@ spec:
       targetPort: 5432
   selector:
     author: rufus
-      name: postgres-pod
+    name: postgres-pod
 ...
